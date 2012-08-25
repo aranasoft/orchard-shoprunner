@@ -1,0 +1,39 @@
+﻿@model ShopRunnerSettingsPart
+@using Orchard.Utility.Extensions;
+@using ShopRunner.Models;
+
+@{ 
+	Layout.Title = T( "ShopRunner" ).ToString( ); 
+}
+
+
+@using ( Html.BeginFormAntiForgeryPost( ) ) {
+    @Html.ValidationSummary( )
+
+
+<fieldset>
+	<legend>ShopRunner Global Settings</legend>
+
+	<div>
+		@Html.LabelFor( model => model.RetailerId, @T( "ShopRunner Retailer Id" ) )
+		@Html.EditorFor(model => model.RetailerId)
+		@Html.ValidationMessageFor(model => model.RetailerId)
+	</div>
+
+	<div>
+		@Html.LabelFor( model => model.LoginValidationUrl, @T( "Login Validation URL" ) )
+		@Html.EditorFor( model => model.LoginValidationUrl )
+		@Html.ValidationMessageFor( model => model.LoginValidationUrl )
+	</div>
+
+	<div>
+		@Html.LabelFor( model => model.EnvironmentId, @T( "Environment Type" ) )
+		@Html.DropDownListFor( m => m.EnvironmentId,
+			new SelectList( Model.AvailableEnvironmentModes, "Value", "Text", (int) Model.EnvironmentId )
+		)
+		@Html.ValidationMessageFor( model => model.EnvironmentId )
+	</div>
+</fieldset>    
+
+		<button class="primaryAction" name="submit" value="@T( "Save" )" type="submit">@T( "Save" )</button>
+}

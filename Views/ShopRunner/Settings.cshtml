@@ -1,0 +1,6 @@
+﻿@model ShopRunner.Models.ShopRunnerSettingsPart
+var _shoprunner_com = new Object();
+_shoprunner_com.enabled = true;
+_shoprunner_com.retailerID = '@Model.RetailerId';
+_shoprunner_com.loginValidationURL = '@Model.LoginValidationUrl';
+_shoprunner_com.environmentID = @((int) Model.EnvironmentId);

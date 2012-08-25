@@ -1,0 +1,15 @@
+﻿@model ShopRunner.ViewModels.EditShopRunnerViewModel
+
+<fieldset>
+	@Html.LabelFor( model => model.DivName, @T( "ShopRunner DIV Name" ) )
+	@Html.DropDownListFor(model => model.DivName,
+ Model.DivNames.Select(dn => new SelectListItem
+                             {
+                                 Selected = dn.Name == Model.DivName,
+                                 Text = dn.Name,
+                                 Value = dn.Name
+                             }),
+                             "Choose a DIV Name...")
+	@Html.ValidationMessageFor(model => model.DivName)
+	<span class="hint">@T("If left blank, the default DIV Name for this content type will be used.")</span>
+</fieldset>
