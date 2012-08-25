@@ -1,0 +1,9 @@
+Name: ShopRunner Messaging
+AntiForgery: enabled
+Author: Jay Harris
+Website: http://www.aranasoft.com
+Version: 1.0
+OrchardVersion: 1.0
+Description: The ShopRunner module implements integration between Orchard and ShopRunner (shoprunner.com),allowing ShopRunner messages to be displayed on any Orchard Content Type.
+FeatureDescription: ShopRunner Integration Support
+Category: Commerce

@@ -1,0 +1,8 @@
+﻿<Placement>
+	<Place Parts_ShopRunner="Content:10" />
+	<Place Parts_ShopRunner_Edit="Content:after" />
+
+	<Match DisplayType="SummaryAdmin">
+		<Place Parts_ShopRunner="-" />
+	</Match>
+</Placement>

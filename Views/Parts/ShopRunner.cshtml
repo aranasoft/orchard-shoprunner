@@ -1,0 +1,5 @@
+﻿@if (Model.DivName != null && !string.IsNullOrWhiteSpace(Model.DivName.ToString())) {
+	Script.Include( Url.RouteUrl( "ShopRunnerSettings" ) ).AtHead( );
+	Script.Include( "shoprunner_init.js" ).AtFoot( );
+	<div name="@Model.DivName"></div>
+}

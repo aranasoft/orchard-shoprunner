@@ -1,0 +1,7 @@
+﻿@model ShopRunner.Models.ShopRunnerTypeSettingsPart
+
+<fieldset>
+	@Html.LabelFor( model => model.DivName, @T( "ShopRunner DIV Name" ) )
+	@Html.TextBoxFor(model => model.DivName)
+	@Html.ValidationMessageFor(model => model.DivName)
+</fieldset>

@@ -1,0 +1,20 @@
+﻿@model ShopRunner.Models.ShopRunnerSettingsPart
+
+<fieldset>
+	<legend>ShopRunner Global Settings</legend>
+
+		@Html.LabelFor( model => model.RetailerId, @T( "ShopRunner Retailer Id" ) )
+		@Html.EditorFor(model => model.RetailerId)
+		@Html.ValidationMessageFor(model => model.RetailerId)
+
+		@Html.LabelFor( model => model.LoginValidationUrl, @T( "Login Validation URL" ) )
+		@Html.EditorFor( model => model.LoginValidationUrl )
+		@Html.ValidationMessageFor( model => model.LoginValidationUrl )
+
+		@Html.LabelFor( model => model.EnvironmentId, @T( "Environment Type" ) )
+		@Html.DropDownListFor( m => m.EnvironmentId,
+			new System.Web.Mvc.SelectList( Model.AvailableEnvironmentModes, "Value", "Text", (int) Model.EnvironmentId )
+		)
+		@Html.ValidationMessageFor( model => model.EnvironmentId )
+
+</fieldset>
