@@ -18,4 +18,4 @@ Option 2: Download from the Orchard Gallery [directly](http://gallery.orchardpro
 
 ## License
 
-Released under the [MIT license](http://www.opensource.org/licenses/mit-license.php).
+Please review LICENSE.txt for licensing information.
