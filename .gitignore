@@ -32,11 +32,5 @@ _ReSharper*/
 *.[Pp]ublish.xml
 *.resharper
 *.dotCover
-[Ww]eb/[Aa]dmin/[Cc]onfiguration/**
-[Ww]eb/[Tt]uition/[Cc]onfiguration/**
-[Ww]eb/[Aa]dmin/[Uu]ser[Cc]ontrols/**
-[Ww]eb/[Tt]uition/[Uu]ser[Cc]ontrols/**
-[Ww]eb/[Dd]eploy/[Aa]dmin-[Dd]eploy/[Ss]ource/**
-[Ww]eb/[Dd]eploy/[Tt]uition-[Dd]eploy/[Ss]ource/**
 *.orig
-[Ww]eb/[Ww]eb/logs/**
+.DS_Store
