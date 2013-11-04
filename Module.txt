@@ -2,8 +2,8 @@ Name: ShopRunner Messaging
 AntiForgery: enabled
 Author: Arana Software, Jay Harris
 Website: https://github.com/aranasoft/OrchardCMS-ShopRunnerModule
-Version: 1.0.1
-OrchardVersion: 1.0
+Version: 1.1
+OrchardVersion: 1.7
 Description: Allows integration and display of ShopRunner messaging for merchants participating with ShopRunner (shoprunner.com).
 FeatureDescription: 
 Features:
