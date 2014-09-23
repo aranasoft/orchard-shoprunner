@@ -1,8 +1,8 @@
-ShopRunner Messaging for Orchard
-===========================
+# orchard-shoprunner
+
+A ShopRunner Messaging Module for [OrchardCMS](http://www.orchardproject.net/) (>=1.7)
 
 The ShopRunner module implements integration between [Orchard CMS](http://orchardproject.net) and [ShopRunner](http://www.shoprunner.com), allowing ShopRunner messages to be displayed on any Orchard Content Type.
-
 
 ## Installation
 
@@ -13,8 +13,6 @@ Option 2: Download from the Orchard Gallery [directly](http://gallery.orchardpro
 ## Contributors
 
 - [Jay Harris](http://github.com/JayHarris) (primary author)
-
-
 
 ## License
 
